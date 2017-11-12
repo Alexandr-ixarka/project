@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjectTaxis
+namespace Taxis.BLL.Enums
 {
-    class Sedan : Car
+    public enum SortType
     {
-        public string category;
+        Asc,
+        Desc
     }
 }

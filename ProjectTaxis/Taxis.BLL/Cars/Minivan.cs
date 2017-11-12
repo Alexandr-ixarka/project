@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace ProjectTaxis
 {
-    class AutoDocuments 
+    public class Minivan : Car
     {
-        public string name;
-        public int releaseyear;
-        public int price;
-
+        public int tonnage;
     }
 }

@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace ProjectTaxis
 {
-    class Car
+    public class Sedan : Car
     {
-        public AutoEngine Engine {get; set;}
-        public AutoBody Body { get; set; }
-        public AutoDocuments Documents { get; set; }
-
+        public string category;
     }
 }

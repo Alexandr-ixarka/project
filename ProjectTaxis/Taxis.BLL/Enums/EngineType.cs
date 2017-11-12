@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjectTaxis
+namespace Taxis.BLL.Enums
 {
-    class Bus : Car
+    public enum EngineType
     {
-        public int  capacityperson;
+        Dissel,
+        Gas,
+        Electric
     }
 }

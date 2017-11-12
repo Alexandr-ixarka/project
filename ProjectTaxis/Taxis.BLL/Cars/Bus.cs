@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ProjectTaxis
 {
-    class AutoBody 
+    public class Bus : Car
     {
-
+        public int  capacityperson;
     }
 }

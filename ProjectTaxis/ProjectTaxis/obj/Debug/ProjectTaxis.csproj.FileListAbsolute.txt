@@ -1,1 +1,3 @@
 c:\users\александр\documents\visual studio 2013\Projects\ProjectTaxis\ProjectTaxis\bin\Debug\ProjectTaxis.exe.config
+C:\Users\Александр\Documents\GitHub\project\ProjectTaxis\ProjectTaxis\bin\Debug\ProjectTaxis.exe.config
+C:\Users\Александр\Documents\GitHub\project\ProjectTaxis\ProjectTaxis\obj\Debug\ProjectTaxis.csprojResolveAssemblyReference.cache
