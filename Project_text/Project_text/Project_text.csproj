@@ -41,23 +41,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IFileReader.cs" />
-    <Compile Include="IParser.cs" />
-    <Compile Include="IPunctuationMarkWorker.cs" />
-    <Compile Include="ISentence.cs" />
-    <Compile Include="ISentenceElement.cs" />
-    <Compile Include="IWordWorker.cs" />
+    <Compile Include="Iterfaces\IFileReader.cs" />
+    <Compile Include="Iterfaces\IParser.cs" />
+    <Compile Include="Iterfaces\IPunctuationMarkWorker.cs" />
+    <Compile Include="Iterfaces\ISentence.cs" />
+    <Compile Include="Iterfaces\ISentenceElement.cs" />
+    <Compile Include="Iterfaces\IWordWorker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PunctuationMarkWorker.cs" />
-    <Compile Include="Sentence.cs" />
-    <Compile Include="SentenceElement.cs" />
-    <Compile Include="SentenceElementType.cs" />
-    <Compile Include="SentenceWorker.cs" />
-    <Compile Include="Text.cs" />
-    <Compile Include="TextParser.cs" />
-    <Compile Include="TextReader.cs" />
-    <Compile Include="WordWorker.cs" />
+    <Compile Include="TextWorks\PunctuationMarkWorker.cs" />
+    <Compile Include="TextModel\Sentence.cs" />
+    <Compile Include="TextModel\SentenceElement.cs" />
+    <Compile Include="Enums\SentenceElementType.cs" />
+    <Compile Include="TextWorks\SentenceWorker.cs" />
+    <Compile Include="TextModel\Text.cs" />
+    <Compile Include="Parsers\TextParser.cs" />
+    <Compile Include="TextWorks\TextReader.cs" />
+    <Compile Include="TextWorks\WordWorker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
