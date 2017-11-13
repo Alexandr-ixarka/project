@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8FF054AA-7420-4DCA-A9C8-B47D658E20F7}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{FBCE15F0-E52F-451E-84EB-C6BB4695D39E}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Project</RootNamespace>
-    <AssemblyName>Project_text</AssemblyName>
+    <RootNamespace>WorkText.BLL</RootNamespace>
+    <AssemblyName>WorkText.BLL</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,17 +39,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Enums\SentenceElementType.cs" />
+    <Compile Include="Iterfaces\IFileReader.cs" />
+    <Compile Include="Iterfaces\IParser.cs" />
+    <Compile Include="Iterfaces\IPunctuationMarkWorker.cs" />
+    <Compile Include="Iterfaces\ISentence.cs" />
+    <Compile Include="Iterfaces\ISentenceElement.cs" />
+    <Compile Include="Iterfaces\IWordWorker.cs" />
+    <Compile Include="Parsers\TextParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\WorkText.BLL\WorkText.BLL.csproj">
-      <Project>{fbce15f0-e52f-451e-84eb-c6bb4695d39e}</Project>
-      <Name>WorkText.BLL</Name>
-    </ProjectReference>
+    <Compile Include="TextModel\Sentence.cs" />
+    <Compile Include="TextModel\SentenceElement.cs" />
+    <Compile Include="TextModel\Text.cs" />
+    <Compile Include="TextWorks\PunctuationMarkWorker.cs" />
+    <Compile Include="TextWorks\SentenceWorker.cs" />
+    <Compile Include="TextWorks\TextReader.cs" />
+    <Compile Include="TextWorks\WordWorker.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
