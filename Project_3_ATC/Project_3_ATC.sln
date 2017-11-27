@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project_3_ATC", "Project_3_ATC\Project_3_ATC.csproj", "{CCB3B285-E7AD-4686-B446-2906E81E961E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATS.BLL", "ATS.BLL\ATS.BLL.csproj", "{67E1374B-339B-4B1F-AFAD-91F6326CD005}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CCB3B285-E7AD-4686-B446-2906E81E961E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCB3B285-E7AD-4686-B446-2906E81E961E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCB3B285-E7AD-4686-B446-2906E81E961E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67E1374B-339B-4B1F-AFAD-91F6326CD005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67E1374B-339B-4B1F-AFAD-91F6326CD005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67E1374B-339B-4B1F-AFAD-91F6326CD005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67E1374B-339B-4B1F-AFAD-91F6326CD005}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,31 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CCB3B285-E7AD-4686-B446-2906E81E961E}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{67E1374B-339B-4B1F-AFAD-91F6326CD005}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Project_3_ATC</RootNamespace>
-    <AssemblyName>Project_3_ATC</AssemblyName>
+    <RootNamespace>ATS.BLL</RootNamespace>
+    <AssemblyName>ATS.BLL</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -38,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -56,34 +39,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Abonent.cs" />
+    <Compile Include="ATSModel\AutomaticTelephoneSystem.cs" />
+    <Compile Include="ATSModel\Port.cs" />
+    <Compile Include="ATSModel\PortState.cs" />
+    <Compile Include="ATSModel\Terminal.cs" />
+    <Compile Include="ATSModel\TerminalState.cs" />
+    <Compile Include="BillingSystem\BillingSystem.cs" />
+    <Compile Include="BillingSystem\Business.cs" />
+    <Compile Include="BillingSystem\Home.cs" />
+    <Compile Include="BillingSystem\TariffPlan.cs" />
+    <Compile Include="BillingSystem\Vip.cs" />
+    <Compile Include="Call.cs" />
+    <Compile Include="CallInfo.cs" />
+    <Compile Include="EventArgsChildren\EventArgsCall.cs" />
+    <Compile Include="EventArgsChildren\EventArgsFilterAbonent.cs" />
+    <Compile Include="EventArgsChildren\EventArgsFinishCall.cs" />
+    <Compile Include="EventArgsChildren\EventArgsWiewReport.cs" />
+    <Compile Include="EventArgsFilterDate.cs" />
+    <Compile Include="IncomingCall.cs" />
+    <Compile Include="OutgoingCall.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ATS.BLL\ATS.BLL.csproj">
-      <Project>{67e1374b-339b-4b1f-afad-91f6326cd005}</Project>
-      <Name>ATS.BLL</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
-      <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
