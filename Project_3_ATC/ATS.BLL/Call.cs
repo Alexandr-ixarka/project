@@ -10,11 +10,7 @@ namespace Project_3_ATC
 {
     public class Call
     {
-        public Call()
-        {
-
-        }
-
+      
         public DateTime DateTimeCall { get; set; }
 
         public int Duration { get; set; }

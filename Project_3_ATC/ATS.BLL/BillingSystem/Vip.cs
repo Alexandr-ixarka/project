@@ -10,9 +10,11 @@ namespace Project_3_ATC.BillingSystem
     {
         private double CostMinute;
         private double SubscriberPay;
+     
         public Vip(DateTime connection)
         {
-            this.DateConnection = connection;
+            if (connection != null)
+            this.DateConnection = connection; 
         }
 
         public Vip(DateTime connection, double costMinute, double subscriberPay)
